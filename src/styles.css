@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+.title h1{
+font-size: 200px;
+ }
+ .title h4{
+    font-size: 40px;
+    font-family: 'Martian Mono', monospace;
+ }
+.title p{
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+}
+.title img{
+    width: 50%;
+}
+.contact_img{
+    width: 120px; 
+    height: 150px;  
+               
+}
+.contact_image{
+    width: 200px;              
+}
+
+

@@ -1,0 +1,67 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Contact Management Application
+            <a routerLink="/contacts/add" class="btn btn-success">
+                <i class="fa-solid fa-user-plus"></i> &nbsp;
+                Add New
+            </a>
+        </h1>
+            <p style="text-align: justify;">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla officia nobis illo quas, in accusantium sequi accusamus magni, quia eaque, eius dicta consequuntur. Recusandae iste porro similique magni nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi illo vel culpa asperiores rerum nesciunt rem, vero itaque quaerat eaque id repudiandae facere molestias assumenda iure quos sed quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi dignissimos quis dolorum obcaecati, vitae in maxime iusto? Iure laborum quae nam iste corporis sequi omnis magnam temporibus, in id!
+            </p>
+            <div class="row">
+                <div class="col-6">
+<input (keyup)="search($event)" type="text" class="form-control" placeholder="Search contact here"> 
+            </div>
+            </div>
+            <!-- card Design -->
+             <div class="container mt-2">
+                <div class="row">
+                    <div class="col-md-6 mt-3" *ngFor="let contact of allcontacts | filter : searchKey :'name' ">
+                        <div class="card list-group-item-secondary">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3"> 
+                                        <!-- contact-image -->
+                                         <img [src]="contact.photo" alt="no image" class="contact_img rounded-circle">
+                            </div>
+                            <div class="col-md-8"> 
+                                <!-- contact details-->
+                                 <ul class="list-group">
+                                    <li class="list-group-item">Name: 
+                                         <b>{{contact.name}}</b>
+                                    </li>
+                                    <li class="list-group-item">Email: 
+                                        <b>{{contact.email}}</b>
+                                    </li>
+                                    <li class="list-group-item">Moblie:
+                                        <b>{{contact.mobile}}</b>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-1 d-flex flex-column justify-content-center align-items-center" > 
+                                <!-- view -->
+                                 <a routerLink="/contacts/view/{{contact.id}}" class="btn btn-warning">
+                                    <i class="fa-solid fa-eye"></i>
+                                </a> 
+                                <!-- edit -->
+                                
+                                <a routerLink="/contacts/edit/:contactId" class="btn btn-warning mt-1">  
+                                <i class="fa-solid fa-pen"></i>
+                            </a> 
+                            <!-- delete -->
+                     <button type="button" class="btn btn-danger mt-1">
+                         <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                                </div >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+     </div>
+ </div>
