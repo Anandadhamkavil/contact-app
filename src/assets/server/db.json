@@ -79,16 +79,6 @@
       "company": "Abernathy Group",
       "title": "Developer",
       "groupId": "4"
-    },
-    {
-      "photo": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202212/messi-cup-fifa_1-sixteen_nine.jpg?size=948:533",
-      "id": "ca9",
-      "name": "Messi",
-      "email": "messi@gmail.com",
-      "mobile": "90783902867",
-      "company": "PSG inc",
-      "title": "Tester",
-      "groupId": "4"
     }
   ],
   "groups": [
